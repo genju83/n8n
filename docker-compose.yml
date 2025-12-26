@@ -51,6 +51,8 @@ services:
       - N8N_SMTP_USER=${N8N_SMTP_USER}
       - N8N_SMTP_PASS=${N8N_SMTP_PASS}
       - N8N_SMTP_SENDER=${N8N_SMTP_SENDER}
+      - N8N_SMTP_SSL=${N8N_SMTP_SSL}
+      - N8N_SMTP_IGNORE_TLS=${N8N_SMTP_IGNORE_TLS}
     volumes:
       - n8n_data:/home/node/.n8n
     networks:
